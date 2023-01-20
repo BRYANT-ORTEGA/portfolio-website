@@ -247,14 +247,17 @@ button:focus,
 }
 
 @keyframes sun-rotation {
-    100% {
-        transform: rotate(360deg);
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(260deg);
     }
 }
 
 .sun-rays {
-    animation: 4s sun-rotation infinite normal linear;
-    transform-origin: 10px 10px;
+    animation: 8s sun-rotation infinite normal linear;
+    transform-origin: 57.5% 8.7%;
 }
 
 @keyframes cloud-move {
