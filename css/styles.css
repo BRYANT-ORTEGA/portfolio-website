@@ -178,6 +178,7 @@ button:focus,
     margin-left: 15px;
 }
 
+/*--------About me--------*/
 .about-me {
     clear: both;
     display: flex;
@@ -185,9 +186,16 @@ button:focus,
     text-align: center;
 }
 
-.table {
+.skill-table {
     margin-left: auto;
     margin-right: auto;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 0.5rem 1.2rem;
+    width: 33.3333%;
 }
 
 .grid {
