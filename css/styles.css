@@ -212,7 +212,8 @@ td {
 
 .grid__item {
     background-color: var(--dark-grey);
-    padding: 10px;
+    padding: 20px;
+    margin-left: 15px;
 }
 
 .grid__item:last-child {
