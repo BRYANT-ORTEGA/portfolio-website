@@ -112,7 +112,7 @@ button:focus,
 .app_screenshot {
     width: 250px;
     margin-right: 40px;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .profile {
