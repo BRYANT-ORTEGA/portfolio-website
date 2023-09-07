@@ -19,11 +19,7 @@
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="css/style.production.css"
-        />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
@@ -50,7 +46,7 @@
                             href="about.html"
                             role="menuitem"
                             class="navigation-list__item"
-                            >About me</a
+                            >Skills</a
                         >
                     </li>
                     <li role="presentation">
@@ -58,7 +54,7 @@
                             href="work.html"
                             role="menuitem"
                             class="navigation-list__item navigation-list__item--active"
-                            >Work</a
+                            >Projects</a
                         >
                     </li>
                     <li role="presentation">
@@ -74,31 +70,25 @@
         </header>
         <!-- Main content -->
         <section>
-            <h1>Examples of my work</h1>
+            <h1 style="text-align: left; margin-left: 2rem">
+                Examples of my work
+            </h1>
             <div class="grid">
                 <!-- Grid items will live here -->
                 <div class="grid__item">
-                    <h2>meet web app</h2>
-                    <p>
-                        A serverless, progressive web application (PWA) with
-                        React using a test-driven development (TDD) technique.
-                        The application uses the Google Calendar API to fetch
-                        upcoming events.
-                    </p>
-                    <a href="https://bryant-ortega.github.io/meet/"
-                        >Launch app here</a
-                    >
-                    <p></p>
-                    <a href="https://github.com/bryant-ortega/meet"
-                        >View Github Repository</a
-                    >
-                    <p></p>
                     <img
                         src="img/place-holder.jpeg"
                         class="app_screenshot"
                         alt="screenshot of meet app"
                         width="250"
                     />
+                    <h2>Meet Web App</h2>
+                    <p>
+                        A serverless, progressive web application (PWA) with
+                        React using a test-driven development (TDD) technique.
+                        The application uses the Google Calendar API to fetch
+                        upcoming events.
+                    </p>
                     <p>Technologies:</p>
                     <ul>
                         <li>Create React App</li>
@@ -107,41 +97,111 @@
                         <li>Google OAuth 2.0</li>
                         <li>Google Calendar API</li>
                     </ul>
+                    <a href="https://bryant-ortega.github.io/meet/" target="_blank"
+                        >Launch app here</a
+                    >
+                    <p></p>
+                    <button type="button" onclick=" window.open('https://github.com/bryant-ortega/meet','_blank')">View GitHub Repository</button>
+                    <p></p>
                 </div>
                 <div class="grid__item">
-                    <h2>Mobile web app2</h2>
-                    <p>A short description</p>
-                    <a href="#"> See project here</a>
+                    <img
+                        src="img/place-holder.jpeg"
+                        class="app_screenshot"
+                        alt="screenshot of meet app"
+                        width="250"
+                    />
+                    <h2>myFlix Client</h2>
+                    <p>
+                        A serverless, progressive web application (PWA) with
+                        React using a test-driven development (TDD) technique.
+                        The application uses the Google Calendar API to fetch
+                        upcoming events.
+                    </p>
+                    <p>Technologies:</p>
+                    <ul>
+                        <li>Create React App</li>
+                        <li>AWS Lambda</li>
+                        <li>JSON WEB TOKEN</li>
+                        <li>Google OAuth 2.0</li>
+                        <li>Google Calendar API</li>
+                    </ul>
+                    <a href="https://bryant-ortega.github.io/meet/" target="_blank"
+                        >Launch app here</a
+                    >
+                    <p></p>
+                    <button type="button" onclick=" window.open('https://github.com/bryant-ortega/meet','_blank')">View GitHub Repository</button>
+                    <p></p>
                 </div>
                 <div class="grid__item">
-                    <h2>Mobile web app3</h2>
-                    <p>A short description</p>
-                    <a href="#"> See project here</a>
+                    <img
+                        src="img/place-holder.jpeg"
+                        class="app_screenshot"
+                        alt="screenshot of meet app"
+                        width="250"
+                    />
+                    <h2>Chat-Demo</h2>
+                    <p>
+                        A chat app for mobile devices built using React Native.
+                        The app provides users with a chat interface and options
+                        to share images and their location. The application used
+                        Google Firestore Database, Firebase authentication, and
+                        Firebase Cloud Storage.
+                    </p>
+                    <p>Technologies:</p>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Firebase Authentication</li>
+                        <li>Firestore Database</li>
+                        <li>Firesbase Cloud Storage</li>
+                        <li>Expo</li>
+                        <li>Gifted Chat</li>
+                    </ul>
+                    <p></p>
+                    <button type="button" onclick=" window.open('https://github.com/bryant-ortega/Chat-Demo','_blank')">View GitHub Repository</button>
+                    <p></p>
                 </div>
                 <div class="grid__item">
-                    <h2>Mobile web app4</h2>
-                    <p>A short description</p>
-                    <a href="#"> See project here</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Mobile web app5</h2>
-                    <p>A short description</p>
-                    <a href="#"> See project here</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Mobile web app6</h2>
-                    <p>A short description</p>
-                    <a href="#"> See project here</a>
+                    <img
+                        src="img/place-holder.jpeg"
+                        class="app_screenshot"
+                        alt="screenshot of meet app"
+                        width="250"
+                    />
+                    <h2>Movie API</h2>
+                    <p>
+                        A serverless, progressive web application (PWA) with
+                        React using a test-driven development (TDD) technique.
+                        The application uses the Google Calendar API to fetch
+                        upcoming events.
+                    </p>
+                    <p>Technologies:</p>
+                    <ul>
+                        <li>Create React App</li>
+                        <li>AWS Lambda</li>
+                        <li>JSON WEB TOKEN</li>
+                        <li>Google OAuth 2.0</li>
+                        <li>Google Calendar API</li>
+                    </ul>
+                    <a href="https://bryant-ortega.github.io/meet/" target="_blank"
+                        >Launch app here</a
+                    >
+                    <p></p>
+                    <button type="button" onclick=" window.open('https://github.com/bryant-ortega/meet','_blank')">View GitHub Repository</button>
+                    <p></p>
                 </div>
             </div>
         </section>
         <!-- Footer with links to social media profiles -->
         <footer class="page-footer">
             <p>Find me on</p>
-            <div class="social-media">
-                <img src="img/github_icon.svg" alt="Github icon" />
-                <img src="img/twitter_icon.svg" alt="Twitter icon" />
-                <img src="img/linkedin_icon.svg" alt="LinkedIn icon" />
+            <div class="footer-icons">
+                <a href="https://github.com/bryant-ortega" target="_blank"
+                    ><img src="img/github_icon.svg" alt="Github icon"
+                /></a>
+                <a href="https://linkedin.com/in/bryant-0rtega" target="_blank"
+                    ><img src="img/linkedin_icon.svg" alt="LinkedIn icon"
+                /></a>
             </div>
         </footer>
         <script src="js/tota11y.min.js"></script>
