@@ -117,7 +117,7 @@ button:focus,
 
 .profile {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 1rem;
 }
 
 .page-footer {
@@ -139,7 +139,7 @@ button:focus,
     padding: 20px;
     flex-direction: column;
     text-align: left;
-    width: 40%;
+    width: 60%;
 }
 
 /*--------CONTACT--------*/
