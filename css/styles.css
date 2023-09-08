@@ -115,6 +115,10 @@ button:focus,
     border-radius: 5%;
 }
 
+.container {
+  padding: 30px;
+  background-color: #fff;
+}
 .profile {
     clear: both;
     display: flex;
