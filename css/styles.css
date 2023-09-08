@@ -119,7 +119,7 @@ button:focus,
     clear: both;
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -223,8 +223,9 @@ td {
 }
 
 .grid__item {
-    background-color: rgb(224, 222, 222);
+    background-color: rgb(231, 231, 231);
     padding: 20px;
+    border-radius: 10px;
 
 }
 
