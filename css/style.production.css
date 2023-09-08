@@ -7,6 +7,19 @@
 
 /* Variables */
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --active-color: #2997ff;
+    --light-grey: #f5f5f7;
+    --dark-grey: #d6d6d6;
+    --purple: #c60bdf;
+    --sun-color1: #edc655;
+    --sun-color2: #fcffad;
+    --sun-color3: #f76414;
+    --font-weight-header: 700;
+}
+
 body {
     font-family: "nunito", sans-serif;
     font-weight: 400;
@@ -18,25 +31,25 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: var(--font-weight-header);
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--font-weight-header);
 }
 
 h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: var(--font-weight-header);
 }
 a {
-    color: #2997ff;
+    color: var(--active-color);
 }
 
 a:visited {
     /* visited link */
-    color: #c60bdf;
+    color: var(--purple);
 }
 
 a:hover,
@@ -47,29 +60,11 @@ a:focus {
 
 a:active {
     /* selected link */
-    color: #2997ff;
+    color: var(--active-color);
 }
 
 /*--------BUTTONS--------*/
-button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #2997ff;
-    color: #fff;
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid #000;
-    -webkit-transition: 0.9s opacity;
-    -o-transition: 0.9s opacity;
-    transition: 0.9s opacity;
-}
+button,
 .button {
     /* overwrites browser defaults and resets the border */
     border: none;
@@ -77,49 +72,28 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #2997ff;
-    color: #fff;
+    background-color: var(--active-color);
+    color: var(--secondary-color);
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--primary-color);
     -webkit-transition: 0.9s opacity;
     -o-transition: 0.9s opacity;
     transition: 0.9s opacity;
 }
 
-button:hover {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-    background-color: #2997ff;
-}
-
-button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-    background-color: #2997ff;
-}
-
-.button:hover {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-    background-color: #2997ff;
-}
-
+button:hover,
+button:focus,
+.button:hover,
 .button:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
-    background-color: #2997ff;
+    background-color: var(--active-color);
 }
 
 .cv-button {
@@ -139,8 +113,8 @@ button:focus {
 }
 
 .button__secondary {
-    background-color: #2997ff;
-    color: #fff;
+    background-color: var(--active-color);
+    color: var(--secondary-color);
 }
 
 .profile__portrait {
@@ -150,12 +124,13 @@ button:focus {
     border-radius: 50%;
 }
 
-.profile {
-    max-width: 700px;
-    margin: 0 auto;
+.app_screenshot {
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 5%;
 }
 
-.page-footer {
+.profile {
     clear: both;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,8 +139,28 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
 }
+
+.page-footer {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer-icons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 20px; /* Adjust the gap for spacing */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+
 
 .contact {
     clear: both;
@@ -178,7 +173,7 @@ button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: left;
-    width: 40%;
+    width: 60%;
 }
 
 /*--------CONTACT--------*/
@@ -254,6 +249,8 @@ button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .skill-table {
@@ -271,21 +268,29 @@ td {
 .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 2rem;
+    margin: 2rem;
 }
 
 .grid__item {
-    background-color: #d6d6d6;
-}
+    background-color: rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 10px;
 
-.grid__item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
 }
 
 
+
+.side-by-side {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.screen-tech {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: left;
+}
